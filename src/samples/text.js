@@ -1,4 +1,65 @@
+ // Headers
+const recommend = {
+  text: "How likely are you to recommend Cole Haan to a friend or colleague?",
+  type: "rating"
+},
+feedbackGeneralCategory = {
+  text: "Please choose a category you would like to leave feedback about.",
+  type: "dropdown"
+},
+websiteGoal = {
+  text: "What was your goal for today's visit to ColeHaan.com?",
+  type: "dropdown"
+},
+feedbackProductCategory = {
+  text: "What product category would you like to leave feedback about?",
+  type: "dropdown"
+},
+storeLocation = {
+  text: "Which store location would you like to leave feedback about?",
+  type: "input"
+},
+contactCustomerService = {
+  text: "How did you contact customer service?",
+  type: "dropdown"
+},
+rateCustomerService = {
+  text: "How would you rate the service?",
+  type: "radio"
+},
+easeForGoal = {
+  text: "How easy was it to accomplish that goal?",
+  type: "radio"
+},
+generalFeedback = {
+  text: "Please share your feedback.",
+  type: "input"
+},
+tellUsFeedback = {
+  text: "Tell us what you think.",
+  type: "input"
+};
+
+// Dropdown Options
+const ourWebsite = "Our Website",
+  ourProducts = "Our Products",
+  ourRetailLocations = "Our Retail Locations",
+  customerService = "Customer Service",
+  colehaan = "Cole Haan, Generally";
+
 const text = {
+  [recommend.text]: recommend.text,
+  [feedbackGeneralCategory.text]: [ourWebsite, ourProducts, ourRetailLocations, customerService, colehaan],
+  // Page Mapping based on First Dropdown Section
+  [ourWebsite]: [websiteGoal, easeForGoal, generalFeedback],
+  [ourProducts]: [feedbackProductCategory, tellUsFeedback],
+  [ourRetailLocations]: [storeLocation, tellUsFeedback],
+  [customerService]: [contactCustomerService, tellUsFeedback, rateCustomerService],
+  [colehaan]: [tellUsFeedback],
+
+
+
+
   pageHeaders: [
     "How likely are you to recommend Cole Haan to a friend or colleague?",
     [
