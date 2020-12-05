@@ -1,41 +1,20 @@
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/** FROM CREATE-REACT-APP **/
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: white; */
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/** FORM PAGE CONTAINER **/
 
 .formPage-container {
   height: 400px;
@@ -55,47 +34,93 @@
 .formPage-logo img {
   width: 30%;
   margin-left: -10px;
-  margin-top: -15px;
+  margin-top: -20px;
   margin-bottom: 5px;
 }
+
 .formPage-page-header {
   font-size: 20px;
   color: #424242;
 }
 
-.formPage-buttonFooter, .formPage-buttonFooter-submit {
+.formPage-page-header-required {
+  font-size: 17.5px;
+  font-weight: 500;
+  color: #585858
+}
+
+/** BUTTON FOOTER **/
+
+.formPage-buttonFooterContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formPage-buttonFooter, .formPage-buttonFooter-submit, .formPage-buttonFooter-back {
   display: flex;
   justify-content: flex-end;
 }
 
 .formPage-container button,
-.formPage-ratingContainer button {
-  background: #C2D8EA;
+.formPage-ratingContainer button,
+.formPage-buttonFooter-next button,
+.formPage-buttonFooter-next-disabled button,
+.formPage-buttonFooter-back button
+.formPage-buttonFooter-submit button {
   border: none;
   padding: 10px;
   font-size: 20px;
   width: 50px;
   height: 50px;
-}
-
-.formPage-container .formPage-buttonFooter button,
-.formPage-container .formPage-buttonFooter-submit button {
-  width: 200px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.formPage-container .formPage-buttonFooter button:hover,
-.formPage-container .formPage-buttonFooter button:active {
-  /* background: #a4c1cf; */
+.formPage-buttonFooter-next-disabled button {
+  opacity: 75%;
+  cursor: not-allowed;
+}
+
+.formPage-buttonFooter-next button,
+.formPage-buttonFooter-next-disabled button {
   background: #77aedc;
-  color: white
 }
 
-.formPage-container .formPage-buttonFooter-submit button {
-  background: #609fd3;
+.formPage-buttonFooter-next button:hover,
+.formPage-buttonFooter-next button:active {
+  background: #5c9cd1;
   color: white;
 }
 
+.formPage-buttonFooter-submit button {
+  background:  #5c9cd1;
+}
+
+.formPage-buttonFooter-submit button:hover,
+.formPage-buttonFooter-submit button:active {
+  background:#5391c5;
+}
+
+.formPage-buttonFooter-next button,
+.formPage-buttonFooter-next-disabled button,
+.formPage-buttonFooter-submit button {
+  color: white;
+  width: 200px;
+  margin-left: 30px;
+}
+
+.formPage-buttonFooter-back button {
+  background: #C2D8EA;
+  width: 150px;
+}
+
+.formPage-buttonFooter-back button:hover,
+.formPage-buttonFooter-back button:active {
+  background: #b4d0e7;
+}
+
+
+/** FORM PAGE INTERACTIONS **/
 
 .formPage-container select {
   width: 100%;
@@ -116,17 +141,15 @@
 }
 
 .formPage-ratingContainer button {
-  background-color: #dee7eb;
-  /* background-color: #C2D8EA; */
-  /* background-color:  #C6D3D9; */
+  background: #dee7eb;
   cursor: pointer;
 }
 
 .formPage-ratingContainer button:hover,
 .formPage-ratingContainer button:active,
 .formPage-ratingContainer button:focus {
-  background-color: #86b2c7;
-  color: white
+  background: #86b2c7;
+  color: white;
 }
 
 .formPage-ratingLabel {
@@ -141,11 +164,12 @@
   font-size: 20px;
   color: #585858;
 }
+
 .formPage-radio input[type=radio] {
-  /* border: 0px; */
   transform: scale(2);
   margin-right: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .formPage_input textarea {
