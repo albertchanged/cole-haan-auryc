@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cole-haan/static/css/main.4fe979b5.chunk.css",
-    "main.js": "/cole-haan/static/js/main.eb327ff1.chunk.js",
-    "main.js.map": "/cole-haan/static/js/main.eb327ff1.chunk.js.map",
-    "runtime-main.js": "/cole-haan/static/js/runtime-main.321c99d4.js",
-    "runtime-main.js.map": "/cole-haan/static/js/runtime-main.321c99d4.js.map",
-    "static/js/2.d97445db.chunk.js": "/cole-haan/static/js/2.d97445db.chunk.js",
-    "static/js/2.d97445db.chunk.js.map": "/cole-haan/static/js/2.d97445db.chunk.js.map",
-    "static/js/3.a904e078.chunk.js": "/cole-haan/static/js/3.a904e078.chunk.js",
-    "static/js/3.a904e078.chunk.js.map": "/cole-haan/static/js/3.a904e078.chunk.js.map",
-    "index.html": "/cole-haan/index.html",
-    "static/css/main.4fe979b5.chunk.css.map": "/cole-haan/static/css/main.4fe979b5.chunk.css.map",
-    "static/js/2.d97445db.chunk.js.LICENSE.txt": "/cole-haan/static/js/2.d97445db.chunk.js.LICENSE.txt",
-    "static/media/colehaan_logo.7fe57729.png": "/cole-haan/static/media/colehaan_logo.7fe57729.png"
+    "main.css": "/cole-haan-auryc/static/css/main.4fe979b5.chunk.css",
+    "main.js": "/cole-haan-auryc/static/js/main.eb327ff1.chunk.js",
+    "main.js.map": "/cole-haan-auryc/static/js/main.eb327ff1.chunk.js.map",
+    "runtime-main.js": "/cole-haan-auryc/static/js/runtime-main.00e201c8.js",
+    "runtime-main.js.map": "/cole-haan-auryc/static/js/runtime-main.00e201c8.js.map",
+    "static/js/2.d97445db.chunk.js": "/cole-haan-auryc/static/js/2.d97445db.chunk.js",
+    "static/js/2.d97445db.chunk.js.map": "/cole-haan-auryc/static/js/2.d97445db.chunk.js.map",
+    "static/js/3.a904e078.chunk.js": "/cole-haan-auryc/static/js/3.a904e078.chunk.js",
+    "static/js/3.a904e078.chunk.js.map": "/cole-haan-auryc/static/js/3.a904e078.chunk.js.map",
+    "index.html": "/cole-haan-auryc/index.html",
+    "static/css/main.4fe979b5.chunk.css.map": "/cole-haan-auryc/static/css/main.4fe979b5.chunk.css.map",
+    "static/js/2.d97445db.chunk.js.LICENSE.txt": "/cole-haan-auryc/static/js/2.d97445db.chunk.js.LICENSE.txt",
+    "static/media/colehaan_logo.7fe57729.png": "/cole-haan-auryc/static/media/colehaan_logo.7fe57729.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.321c99d4.js",
+    "static/js/runtime-main.00e201c8.js",
     "static/js/2.d97445db.chunk.js",
     "static/css/main.4fe979b5.chunk.css",
     "static/js/main.eb327ff1.chunk.js"
