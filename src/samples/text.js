@@ -130,4 +130,4 @@ const text = {
   },
 }
 
-module.exports = text;
+export default text;
