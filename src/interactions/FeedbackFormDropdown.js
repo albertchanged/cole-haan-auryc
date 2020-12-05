@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 
 const FeedbackFormDropdown = ({dropdownOptions}) => {
   const [currentOption, setCurrentOption] = useState("Choose...");
@@ -8,7 +8,6 @@ const FeedbackFormDropdown = ({dropdownOptions}) => {
     setCurrentOption(selectedOption);
   }
 
-  console.log(currentOption);
   return (
     <select value={currentOption} id="categoryDropdown" onChange={selectOption}>
       <option>Choose...</option>

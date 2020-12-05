@@ -47,19 +47,9 @@ const ourWebsite = "Our Website",
   customerService = "Customer Service",
   colehaan = "Cole Haan, Generally";
 
+
 const text = {
-  [recommend.text]: recommend.text,
-  [feedbackGeneralCategory.text]: [ourWebsite, ourProducts, ourRetailLocations, customerService, colehaan],
-  // Page Mapping based on First Dropdown Section
-  [ourWebsite]: [websiteGoal, easeForGoal, generalFeedback],
-  [ourProducts]: [feedbackProductCategory, tellUsFeedback],
-  [ourRetailLocations]: [storeLocation, tellUsFeedback],
-  [customerService]: [contactCustomerService, tellUsFeedback, rateCustomerService],
-  [colehaan]: [tellUsFeedback],
-
-
-
-
+  // These are currently used in the app
   pageHeaders: [
     "How likely are you to recommend Cole Haan to a friend or colleague?",
     [
@@ -69,6 +59,42 @@ const text = {
     "How easy was it to accomplish that goal?",
     "Please share your feedback."
   ],
+  dropdownOptions: {
+    feedbackCategories: [
+      "Our Website",
+      "Our Products",
+      "Our Retail Locations",
+      "Customer Service",
+      "Cole Haan, Generally"
+    ],
+    goalCategories: [
+      "Browse new arrivals",
+      "Find a specific style",
+      "Compare products",
+      "Browse sale items",
+      "Contact Customer Service",
+      "Return or exchange an item"
+    ]
+  },
+  easeCategories: [
+    "Very Difficult",
+    "Difficult",
+    "Not Difficult nor Easy",
+    "Easy",
+    "Very Easy"
+  ],
+
+
+  // Brainstorming how to map pages depending on selections
+  [recommend.text]: recommend.text,
+  [feedbackGeneralCategory.text]: [ourWebsite, ourProducts, ourRetailLocations, customerService, colehaan],
+
+  [ourWebsite]: [websiteGoal, easeForGoal, generalFeedback],
+  [ourProducts]: [feedbackProductCategory, tellUsFeedback],
+  [ourRetailLocations]: [storeLocation, tellUsFeedback],
+  [customerService]: [contactCustomerService, tellUsFeedback, rateCustomerService],
+  [colehaan]: [tellUsFeedback],
+
   initialDropdownOptions: {
     feedbackCategories: {
       "Our Website": {
@@ -102,30 +128,6 @@ const text = {
       "Return or exchange an item"
     ]
   },
-  dropdownOptions: {
-    feedbackCategories: [
-      "Our Website",
-      "Our Products",
-      "Our Retail Locations",
-      "Customer Service",
-      "Cole Haan, Generally"
-    ],
-    goalCategories: [
-      "Browse new arrivals",
-      "Find a specific style",
-      "Compare products",
-      "Browse sale items",
-      "Contact Customer Service",
-      "Return or exchange an item"
-    ]
-  },
-  easeCategories: [
-    "Very Difficult",
-    "Difficult",
-    "Not Difficult nor Easy",
-    "Easy",
-    "Very Easy"
-  ]
 }
 
 module.exports = text;

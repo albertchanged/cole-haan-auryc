@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import text from "../samples/text.js";
 import "../App.css";
 

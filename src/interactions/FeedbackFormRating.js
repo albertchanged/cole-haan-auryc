@@ -1,29 +1,30 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import "../App.css";
 
-const ratingNumbers = Array.from(Array(10).keys());
+const ratingNumbers = Array.from(Array(11).keys());
 
-const FeedbackFormRating = () => {
-  const [rating, setRating] = useState(ratingNumbers[0]);
+const FeedbackFormRating = ({enableButton}) => {
+  const [rating, setRating] = useState();
 
   const selectRating = (e) => {
     e.preventDefault();
-    console.log(e);
     setRating(e.target.innerText);
+    enableButton();
   }
 
-  console.log(rating);
+  // With more time, I would use a radio for these buttons instead
+  // That way, the button would stay clicked
   return (
     <div className="formPage-ratingContainer">
       {
         ratingNumbers.map((number) => {
           return (
-              <button
-                key={number}
-                onClick={selectRating}
-              >
-                {number}
-              </button>
+            <button
+              key={number}
+              onClick={selectRating}
+            >
+              {number}
+            </button>
           );
         })
       }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import "../App.css";
 
 const FeedbackFormInput = () => {
@@ -10,7 +10,7 @@ const FeedbackFormInput = () => {
 
   return (
     <div className="formPage_input">
-      <textarea value={input} onChange={updateInput} placeholder="Your answer"/>
+      <textarea value={input} onChange={updateInput} placeholder="Your answer" />
     </div>
   )
 }
