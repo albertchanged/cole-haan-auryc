@@ -77,7 +77,7 @@
 }
 
 .formPage-buttonFooter-next-disabled button {
-  opacity: 75%;
+  opacity: 0.75;
   cursor: not-allowed;
 }
 
