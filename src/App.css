@@ -83,22 +83,22 @@
 
 .formPage-buttonFooter-next button,
 .formPage-buttonFooter-next-disabled button {
-  background: #77aedc;
+  background: #5c9cd1;
 }
 
 .formPage-buttonFooter-next button:hover,
 .formPage-buttonFooter-next button:active {
-  background: #5c9cd1;
+  background: #4b8dc3;
   color: white;
 }
 
 .formPage-buttonFooter-submit button {
-  background:  #5c9cd1;
+  background: #5c9cd1;
 }
 
 .formPage-buttonFooter-submit button:hover,
 .formPage-buttonFooter-submit button:active {
-  background:#5391c5;
+  background: #4b8dc3;
 }
 
 .formPage-buttonFooter-next button,
@@ -110,13 +110,14 @@
 }
 
 .formPage-buttonFooter-back button {
-  background: #C2D8EA;
+  background: #929ca4;
+  color: white;
   width: 150px;
 }
 
 .formPage-buttonFooter-back button:hover,
 .formPage-buttonFooter-back button:active {
-  background: #b4d0e7;
+  background: #7e868b;
 }
 
 
