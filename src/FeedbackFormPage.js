@@ -1,22 +1,25 @@
 import React from "react";
 import "./App.css";
 import text from "./samples/text.js";
-import FeedbackFormDropdown from "./interactions/FeedbackFormDropdown";
-import FeedbackFormRating from "./interactions/FeedbackFormRating";
-import FeedbackFormRadio from "./interactions/FeedbackFormRadio";
-import FeedbackFormInput from "./interactions/FeedbackFormInput";
 
-const FeedbackFormPage = ({pageNumber}) => {
-  console.log("Hi", pageNumber)
-  console.log(text.pageHeaders);
+import FeedbackFormRatingPage from "./pages/FeedbackFormRatingPage";
+import FeedbackFormCategoryPage from "./pages/FeedbackFormCategoryPage";
+import FeedbackFormEasePage from "./pages/FeedbackFormEasePage";
+import FeedbackFormInputPage from "./pages/FeedbackFormInputPage";
+
+const FeedbackFormPage = ({pageNumber, enableButton}) => {
   const pageHeaders = text.pageHeaders;
-  const {feedbackCategories, goalCategories} = text.dropdownOptions;
   const currentHeader = pageHeaders[pageNumber];
+
+  const {feedbackCategories, goalCategories} = text.dropdownOptions;
+  
   switch (pageNumber) {
     case 0:
       return (
         <FeedbackFormRatingPage
           header={currentHeader}
+          required={true}
+          enableButton={enableButton}
         />
       );
     case 1:
@@ -45,63 +48,3 @@ const FeedbackFormPage = ({pageNumber}) => {
 }
 
 export default FeedbackFormPage;
-
-const FeedbackFormRatingPage = ({header}) => {
-  return (
-    <div className="formPage-pageContainer">
-      <h3 className="formPage-page-header">
-        {header}
-      </h3>
-      <FeedbackFormRating/>
-    </div>
-  );
-}
-
-const FeedbackFormCategoryPage = ({headers, feedbackCategories, goalCategories}) => {
-  const [header1, header2] = headers;
-  return (
-    <div className="formPage-pageContainer">
-      <h3 className="formPage-page-header">
-        {header1}
-      </h3>
-      <FeedbackFormDropdown dropdownOptions={feedbackCategories}/>
-      <h3 className="formPage-page-header" style={{marginTop: "3%"}}>
-        {header2}
-      </h3>
-      <FeedbackFormDropdown dropdownOptions={goalCategories}/>
-    </div>    
-  );
-}
-
-// const FeedbackFormGoalPage = ({header, dropdownOptions}) => {
-//   return (
-//     <div className="formPage-pageContainer">
-//       <h3 className="formPage-page-header">
-//         {header}
-//       </h3>
-//       <FeedbackFormDropdown dropdownOptions={dropdownOptions}/>
-//     </div>    
-//   );
-// }
-
-const FeedbackFormEasePage = ({header}) => {
-  return (
-    <div className="formPage-pageContainer">
-      <h3 className="formPage-page-header">
-        {header}
-      </h3>
-      <FeedbackFormRadio/>
-    </div>    
-  );
-}
-
-const FeedbackFormInputPage = ({header}) => {
-  return (
-    <div className="formPage-pageContainer">
-      <h3 className="formPage-page-header">
-        {header}
-      </h3>
-      <FeedbackFormInput/>
-    </div>    
-  );
-}
