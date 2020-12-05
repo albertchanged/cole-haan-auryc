@@ -83,6 +83,7 @@ const text = {
     "Easy",
     "Very Easy"
   ],
+  generalRatingRangeLabels: ["Not at all likely", "Extremely likely"],
 
 
   // Brainstorming how to map pages depending on selections

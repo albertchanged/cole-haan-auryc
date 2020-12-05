@@ -10,7 +10,8 @@ import FeedbackFormInputPage from "./pages/FeedbackFormInputPage";
 const FeedbackFormPage = ({pageNumber, enableButton}) => {
   const pageHeaders = text.pageHeaders;
   const currentHeader = pageHeaders[pageNumber];
-
+  const generalRatingRangeLabels = text.generalRatingRangeLabels;
+  console.log(generalRatingRangeLabels)
   const {feedbackCategories, goalCategories} = text.dropdownOptions;
   
   switch (pageNumber) {
@@ -20,6 +21,7 @@ const FeedbackFormPage = ({pageNumber, enableButton}) => {
           header={currentHeader}
           required={true}
           enableButton={enableButton}
+          rangeLabels={generalRatingRangeLabels}
         />
       );
     case 1:
